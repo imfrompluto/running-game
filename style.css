@@ -1,0 +1,155 @@
+.background{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+#boy{
+    position: fixed;
+    z-index: 5;
+    height: 200px;
+    bottom: 24%;
+    transition: .4s;
+    left: 70px;
+}
+
+#bg0{
+    animation: 2.5s 1 bg0 linear;
+    /* filter: grayscale(100%);
+    z-index: 999; */
+}
+
+#bg1{
+    animation: 5s infinite bg linear;
+    transform: translateX(100%);
+}
+
+#bg2{
+    animation: 5s infinite bg linear;
+    animation-delay: 2.5s;
+    transform: translateX(100%);
+
+}
+
+@keyframes bg0{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes bg{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#scoretitle{
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    right: 15px;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 1px 0 10px rgba(173, 216, 230, 0.538);
+    color: rgb(7, 139, 255);
+}
+
+.rock{
+    z-index: 7;
+    position: fixed;
+    right: -180px;
+    bottom: 20%;
+    width: 180px;
+
+
+}
+
+#bird{
+width: 300px;
+position: fixed;
+top: 240px;
+transform: scaleX(-1);
+right: -300px;
+}
+
+.modal{
+    /* background-color: rgba(0, 255, 255, 0.439);*/
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: .4s;
+}
+
+.modal form{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0;
+
+}
+
+button{
+    background-color: #4CAF50; /* Green */
+    border: 1px solid transparent;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 16px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+button:hover{
+    background-color: #74d977;
+    border: 1px solid white;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+
+form img{
+    width: calc(25% - 20px);
+    background-color: rgba(255, 255, 255, 0.56);
+    height: 200px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin: 10px;
+    border: solid 6px rgba(245, 245, 245, 0);
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+
+.active{
+    border: 6px #4CAF50 solid;
+    
+}
+
+form img:hover{
+    border: solid 6px white;
+}
+
+h3{
+    font-size: 20px;
+    
+}
